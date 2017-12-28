@@ -1,0 +1,4 @@
+[debug] Copy resource mappings: 
+[debug] 	(/Users/alphx/slot-machine-web/conf/application.conf,/Users/alphx/slot-machine-web/target/scala-2.12/classes/application.conf)
+[debug] 	(/Users/alphx/slot-machine-web/conf/logback.xml,/Users/alphx/slot-machine-web/target/scala-2.12/classes/logback.xml)
+[debug] 	(/Users/alphx/slot-machine-web/conf/routes,/Users/alphx/slot-machine-web/target/scala-2.12/classes/routes)

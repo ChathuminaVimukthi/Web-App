@@ -1,0 +1,83 @@
+@(message: String, style: String = "java")
+
+@main("Casino X") {
+  <div id="images">
+    <img id="bell" src="@routes.Assets.versioned("/images/reels/bell.png")" style="display: none"/>
+    <img id="cherry" src="@routes.Assets.versioned("/images/reels/cherry.png")"/>
+    <img id="lemon" src="@routes.Assets.versioned("/images/reels/lemon.png")"/>
+    <img id="plum" src="@routes.Assets.versioned("/images/reels/plum.png")"/>
+    <img id="redseven" src="@routes.Assets.versioned("/images/reels/redseven.png")"/>
+    <img id="watermelon" src="@routes.Assets.versioned("/images/reels/watermelon.png")"/>
+  </div>
+
+  <section id="top">
+  </section>
+  <div id="gui">
+    <div id="logo">
+      <div id="overlay">
+      </div>
+      <div class="flexslider">
+        <div class="slides">
+          <img src="@routes.Assets.versioned("/images/logo-x.png")">
+        </div>
+      </div>
+    </div>
+    <div class="front-layout">
+      <div class="overlay_glass"><!-- overlay --></div>
+      <div class="top-space"><!-- blank space --></div>
+      <div class="middle-space">
+        <div class="overlay-shade"><!-- overlay for the reels--></div>
+        <div class="background-shade"><!-- background for the reel stepper unit--></div>
+        <div id="reels">
+          <canvas id="canvas1" width="200" height="200"></canvas>
+          <canvas id="canvas2" width="200" height="200"></canvas>
+          <canvas id="canvas3" width="200" height="200"></canvas>
+        </div>
+      </div>
+      <div class="bottom-space"><!-- winner paid, bet, credts and free games -->
+        <div id="winner_paid" class="display_container">
+          <div class="segment_display_wrap medium">
+            <div id="winAmount" class="segment_display active">&nbsp;&nbsp;&nbsp;&nbsp;0</div>
+
+          </div>
+          <div class="label">
+            WIN AMOUNT
+          </div>
+        </div>
+        <div id="bet" class="display_container">
+          <div class="segment_display_wrap small">
+            <div id="betAmount" class="segment_display active">&nbsp;0</div>
+          </div>
+          <div class="label">
+            BET
+          </div>
+        </div>
+        <div id="free_games" class="display_container">
+          <div class="label">
+            TOTAL WINS
+          </div>
+          <div class="segment_display_wrap">
+            <div id="totalWins" class="segment_display active">0</div>
+          </div>
+        </div>
+        <div id="credits" class="display_container">
+          <div class="label">
+            CREDITS
+          </div>
+          <div class="segment_display_wrap">
+            <div id="creditAmount" class="segment_display active">10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controlpanel">
+      <a  id="stop" class="button glossy functions red" style="display:none">STOP<br />SPIN</a>
+      <a id="spin_reels" class="button glossy">SPIN<br />REELS</a>
+      <a id="bet_max" class="bet button glossy">BET<br />MAX</a>
+      <a id="bet_one" class="bet button glossy">BET<br />ONE</a>
+      <a id="add_coin" class="bet button glossy">ADD<br />COIN</a>
+      <a id="stats" class="bet button glossy">STATIS<br />-TICS</a>
+    </div>
+  </div>
+
+}
