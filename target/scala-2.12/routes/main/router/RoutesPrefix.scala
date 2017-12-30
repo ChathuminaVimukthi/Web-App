@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/alphx/slot-machine-web/conf/routes
-// @DATE:Sun Dec 24 21:28:17 IST 2017
+// @DATE:Sat Dec 30 02:58:15 IST 2017
 
 
 package router {

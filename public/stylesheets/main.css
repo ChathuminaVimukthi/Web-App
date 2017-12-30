@@ -1,6 +1,7 @@
+
 #images{
     visibility: hidden;
-    height: 10px;
+    height: 0px;
 }
 #gui{
     width: 670px;
@@ -341,6 +342,3 @@
     height: 75%;
 }
 
-#demo{
-    color: white;
-}

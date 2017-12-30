@@ -33,24 +33,23 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 Seq[Any](format.raw/*1.43*/("""
 
 """),_display_(/*3.2*/main("Casino X")/*3.18*/ {_display_(Seq[Any](format.raw/*3.20*/("""
-  """),format.raw/*4.3*/("""<div id="images">
-    <img id="bell" src=""""),_display_(/*5.26*/routes/*5.32*/.Assets.versioned("/images/reels/bell.png")),format.raw/*5.75*/("""" style="display: none"/>
-    <img id="cherry" src=""""),_display_(/*6.28*/routes/*6.34*/.Assets.versioned("/images/reels/cherry.png")),format.raw/*6.79*/(""""/>
-    <img id="lemon" src=""""),_display_(/*7.27*/routes/*7.33*/.Assets.versioned("/images/reels/lemon.png")),format.raw/*7.77*/(""""/>
-    <img id="plum" src=""""),_display_(/*8.26*/routes/*8.32*/.Assets.versioned("/images/reels/plum.png")),format.raw/*8.75*/(""""/>
-    <img id="redseven" src=""""),_display_(/*9.30*/routes/*9.36*/.Assets.versioned("/images/reels/redseven.png")),format.raw/*9.83*/(""""/>
-    <img id="watermelon" src=""""),_display_(/*10.32*/routes/*10.38*/.Assets.versioned("/images/reels/watermelon.png")),format.raw/*10.87*/(""""/>
+
+  """),format.raw/*5.3*/("""<div id="images">
+    <img id="bell" src=""""),_display_(/*6.26*/routes/*6.32*/.Assets.versioned("/images/reels/bell.png")),format.raw/*6.75*/("""" style="display: none"/>
+    <img id="cherry" src=""""),_display_(/*7.28*/routes/*7.34*/.Assets.versioned("/images/reels/cherry.png")),format.raw/*7.79*/(""""/>
+    <img id="lemon" src=""""),_display_(/*8.27*/routes/*8.33*/.Assets.versioned("/images/reels/lemon.png")),format.raw/*8.77*/(""""/>
+    <img id="plum" src=""""),_display_(/*9.26*/routes/*9.32*/.Assets.versioned("/images/reels/plum.png")),format.raw/*9.75*/(""""/>
+    <img id="redseven" src=""""),_display_(/*10.30*/routes/*10.36*/.Assets.versioned("/images/reels/redseven.png")),format.raw/*10.83*/(""""/>
+    <img id="watermelon" src=""""),_display_(/*11.32*/routes/*11.38*/.Assets.versioned("/images/reels/watermelon.png")),format.raw/*11.87*/(""""/>
   </div>
 
-  <section id="top">
-  </section>
   <div id="gui">
     <div id="logo">
       <div id="overlay">
       </div>
       <div class="flexslider">
         <div class="slides">
-          <img src=""""),_display_(/*21.22*/routes/*21.28*/.Assets.versioned("/images/logo-x.png")),format.raw/*21.67*/("""">
+          <img src=""""),_display_(/*20.22*/routes/*20.28*/.Assets.versioned("/images/logo-x.png")),format.raw/*20.67*/("""">
         </div>
       </div>
     </div>
@@ -112,7 +111,7 @@ Seq[Any](format.raw/*1.43*/("""
     </div>
   </div>
 
-""")))}),format.raw/*83.2*/("""
+""")))}),format.raw/*82.2*/("""
 """))
       }
     }
@@ -129,11 +128,11 @@ Seq[Any](format.raw/*1.43*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Dec 28 13:36:03 IST 2017
+                  DATE: Sat Dec 30 02:51:02 IST 2017
                   SOURCE: /Users/alphx/slot-machine-web/app/views/index.scala.html
-                  HASH: d50a32e4aee88ee8fb24184e49d9ef1ca1b8ce98
-                  MATRIX: 955->1|1091->42|1119->45|1143->61|1182->63|1211->66|1280->109|1294->115|1357->158|1436->211|1450->217|1515->262|1571->292|1585->298|1649->342|1704->371|1718->377|1781->420|1840->453|1854->459|1921->506|1983->541|1998->547|2068->596|2299->800|2314->806|2374->845|4744->3185
-                  LINES: 28->1|33->1|35->3|35->3|35->3|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|42->10|42->10|42->10|53->21|53->21|53->21|115->83
+                  HASH: 80d4bcca0241dcbf6958b06edeb950cf78b132fc
+                  MATRIX: 955->1|1091->42|1119->45|1143->61|1182->63|1212->67|1281->110|1295->116|1358->159|1437->212|1451->218|1516->263|1572->293|1586->299|1650->343|1705->372|1719->378|1782->421|1842->454|1857->460|1925->507|1987->542|2002->548|2072->597|2269->767|2284->773|2344->812|4714->3152
+                  LINES: 28->1|33->1|35->3|35->3|35->3|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|42->10|42->10|42->10|43->11|43->11|43->11|52->20|52->20|52->20|114->82
                   -- GENERATED --
               */
           

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/alphx/slot-machine-web/conf/routes
-// @DATE:Sun Dec 24 21:28:17 IST 2017
+// @DATE:Sat Dec 30 02:58:15 IST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -30,9 +30,19 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:8
+    def login: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.login",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:9
+  // @LINE:11
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -40,7 +50,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:9
+    // @LINE:11
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

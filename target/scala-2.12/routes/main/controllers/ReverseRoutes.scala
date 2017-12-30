@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/alphx/slot-machine-web/conf/routes
-// @DATE:Sun Dec 24 21:28:17 IST 2017
+// @DATE:Sat Dec 30 02:58:15 IST 2017
 
 import play.api.mvc.Call
 
@@ -25,16 +25,22 @@ package controllers {
       Call("GET", _prefix)
     }
   
+    // @LINE:8
+    def login(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "login")
+    }
+  
   }
 
-  // @LINE:9
+  // @LINE:11
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:9
+    // @LINE:11
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
